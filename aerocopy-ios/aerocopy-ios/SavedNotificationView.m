@@ -21,11 +21,11 @@ const NSInteger kArrowTag = 1;
 		self.backgroundColor = MAIN_TEXT_COLOR;
 		
 		UIImageView *cloudImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"cloud"]];
-		cloudImage.frame = AECGRectWithSize(cloudImage.frame, cloudImage.image.size.width, cloudImage.image.size.height);
+		cloudImage.frame = AEDCGRectWithSize(cloudImage.frame, cloudImage.image.size.width, cloudImage.image.size.height);
 		[self addSubview:cloudImage];
 		
 		UIImageView *arrowImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"arrow"]];
-		arrowImage.frame = AECGRectWithSize(arrowImage.frame, arrowImage.image.size.width, arrowImage.image.size.height);
+		arrowImage.frame = AEDCGRectWithSize(arrowImage.frame, arrowImage.image.size.width, arrowImage.image.size.height);
 		arrowImage.tag = kArrowTag;
 		[self addSubview:arrowImage];
 		
@@ -37,9 +37,9 @@ const NSInteger kArrowTag = 1;
 		[savedLabel sizeToFit];
 		[self addSubview:savedLabel];
 		
-		savedLabel.frame = AECGRectPlace(savedLabel.frame, floor(CGRectGetMidX(self.frame) - (savedLabel.frame.size.width / 2.0) - (cloudImage.frame.size.width / 2.0) - 5.0), floor(CGRectGetMidY(self.frame) - (savedLabel.frame.size.height / 2.0)));
-		cloudImage.frame = AECGRectPlace(cloudImage.frame, savedLabel.frame.origin.x + savedLabel.frame.size.width + 10.0, floor(CGRectGetMidY(self.frame) - (cloudImage.frame.size.height / 2.0)));
-		arrowImage.frame = AECGRectPlace(arrowImage.frame, cloudImage.frame.origin.x + 9.0, cloudImage.frame.origin.y + cloudImage.frame.size.height);
+		savedLabel.frame = AEDCGRectPlace(savedLabel.frame, floor(CGRectGetMidX(self.frame) - (savedLabel.frame.size.width / 2.0) - (cloudImage.frame.size.width / 2.0) - 5.0), floor(CGRectGetMidY(self.frame) - (savedLabel.frame.size.height / 2.0)));
+		cloudImage.frame = AEDCGRectPlace(cloudImage.frame, savedLabel.frame.origin.x + savedLabel.frame.size.width + 10.0, floor(CGRectGetMidY(self.frame) - (cloudImage.frame.size.height / 2.0)));
+		arrowImage.frame = AEDCGRectPlace(arrowImage.frame, cloudImage.frame.origin.x + 9.0, cloudImage.frame.origin.y + cloudImage.frame.size.height);
 	}
 
 	return self;
@@ -50,7 +50,7 @@ const NSInteger kArrowTag = 1;
 	__block UIImageView *arrow = (UIImageView *)[self viewWithTag:kArrowTag];
 
 	[UIView animateWithDuration:.7 delay:.5 options:UIViewAnimationOptionCurveEaseOut animations:^{
-		arrow.frame = AECGRectPlaceY(arrow.frame, arrow.frame.origin.y - arrow.frame.size.height);
+		arrow.frame = AEDCGRectPlaceY(arrow.frame, arrow.frame.origin.y - arrow.frame.size.height);
 	} completion:^(BOOL finished) {
 		[UIView animateWithDuration:.5 delay:1.5 options:0 animations:^{
 			self.alpha = 0;

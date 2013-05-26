@@ -48,12 +48,12 @@
 		bself.fingerView.alpha = 1.0;
 	} completion:^(BOOL finished) {
 		[UIView animateWithDuration:1 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-			bself.fingerView.frame = AECGRectPlaceX(bself.fingerView.frame, bself.endPoint.x);
+			bself.fingerView.frame = AEDCGRectPlaceX(bself.fingerView.frame, bself.endPoint.x);
 		} completion:^(BOOL finished) {
 			[UIView animateWithDuration:0.3 delay:0 options:0 animations:^{
 				bself.fingerView.alpha = 0.0;
 			} completion:^(BOOL finished) {
-				bself.fingerView.frame = AECGRectPlaceX(bself.fingerView.frame, bself.startPoint.x);
+				bself.fingerView.frame = AEDCGRectPlaceX(bself.fingerView.frame, bself.startPoint.x);
 				[bself performSelector:@selector(ae_performFingerAnimation) withObject:nil afterDelay:0.5];
 			}];
 		}];
@@ -77,7 +77,7 @@
 		infoLabel.font = [UIFont fontWithName:@"Bariol-Regular" size:32];
 		infoLabel.text = NSLocalizedString(@"Swipe to close.", nil);
 		[infoLabel sizeToFit];
-		infoLabel.frame = AECGRectPlace(infoLabel.frame, floor((self.containerView.frame.size.width / 2.0) - (infoLabel.frame.size.width / 2.0)), 20.0);
+		infoLabel.frame = AEDCGRectPlace(infoLabel.frame, floor((self.containerView.frame.size.width / 2.0) - (infoLabel.frame.size.width / 2.0)), 20.0);
 		infoLabel.textColor = MAIN_TEXT_COLOR;
 		infoLabel.shadowColor = INFO_TEXT_SHADOW_COLOR;
 		infoLabel.shadowOffset = CGSizeMake(0, 1.0);
@@ -85,8 +85,8 @@
 		[self.containerView addSubview:infoLabel];
 		
 		self.fingerView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"finger"]];
-		self.fingerView.frame = AECGRectWithSize(self.fingerView.frame, self.fingerView.image.size.width, self.fingerView.image.size.height);
-		self.fingerView.frame = AECGRectPlace(self.fingerView.frame, 20.0, floor(self.containerView.frame.size.height / 2.0) - 40.0);
+		self.fingerView.frame = AEDCGRectWithSize(self.fingerView.frame, self.fingerView.image.size.width, self.fingerView.image.size.height);
+		self.fingerView.frame = AEDCGRectPlace(self.fingerView.frame, 20.0, floor(self.containerView.frame.size.height / 2.0) - 40.0);
 		[self.containerView addSubview:self.fingerView];
 		
 		self.startPoint = self.fingerView.frame.origin;

@@ -30,9 +30,9 @@
 {
 	CGFloat x = floor([self.panRecognizer translationInView:self].x);
 	if (x > kDetailViewVisibleOrigin)
-		self.frame = AECGRectPlaceX(self.frame, x);
+		self.frame = AEDCGRectPlaceX(self.frame, x);
 	else
-		self.frame = AECGRectPlaceX(self.frame, kDetailViewVisibleOrigin);
+		self.frame = AEDCGRectPlaceX(self.frame, kDetailViewVisibleOrigin);
 
 	if (self.panRecognizer.state == UIGestureRecognizerStateEnded)
 	{
@@ -43,7 +43,7 @@
 			x = kDetailViewHiddenOrigin;
 		
 		[UIView animateWithDuration:.2 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
-			self.frame = AECGRectPlaceX(self.frame, x);
+			self.frame = AEDCGRectPlaceX(self.frame, x);
 		} completion:nil];
 	}
 	else

@@ -8,32 +8,32 @@
 
 #import <Foundation/Foundation.h>
 
-static CGRect AECGRectPlace(CGRect rect, CGFloat x, CGFloat y)
+static CGRect AEDCGRectPlace(CGRect rect, CGFloat x, CGFloat y)
 {
 	return CGRectMake(x, y, rect.size.width, rect.size.height);
 }
 
-static CGRect AECGRectPlaceX(CGRect rect, CGFloat x)
+static CGRect AEDCGRectPlaceX(CGRect rect, CGFloat x)
 {
-	return AECGRectPlace(rect, x, rect.origin.y);
+	return AEDCGRectPlace(rect, x, rect.origin.y);
 }
 
-static CGRect AECGRectPlaceY(CGRect rect, CGFloat y)
+static CGRect AEDCGRectPlaceY(CGRect rect, CGFloat y)
 {
-	return AECGRectPlace(rect, rect.origin.x, y);
+	return AEDCGRectPlace(rect, rect.origin.x, y);
 }
 
-static CGRect AECGRectWithSize(CGRect rect, CGFloat width, CGFloat height)
+static CGRect AEDCGRectWithSize(CGRect rect, CGFloat width, CGFloat height)
 {
 	return CGRectMake(rect.origin.x, rect.origin.y, width, height);
 }
 
-static CGRect AECGRectWithWidth(CGRect rect, CGFloat width)
+static CGRect AEDCGRectWithWidth(CGRect rect, CGFloat width)
 {
-	return AECGRectWithSize(rect, width, rect.size.height);
+	return AEDCGRectWithSize(rect, width, rect.size.height);
 }
 
-static CGRect AECGRectWithHeight(CGRect rect, CGFloat height)
+static CGRect AEDCGRectWithHeight(CGRect rect, CGFloat height)
 {
-	return AECGRectWithSize(rect, rect.size.width, height);
+	return AEDCGRectWithSize(rect, rect.size.width, height);
 }

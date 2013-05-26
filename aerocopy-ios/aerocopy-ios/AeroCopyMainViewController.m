@@ -96,19 +96,19 @@
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(ae_itemSaved:) name:kAeroCopySavedNotification object:nil];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(ae_itemSaved:) name:kAeroCopyUpdateddNotification object:nil];
 	
-	UIView *marginView = [[UIView alloc] initWithFrame:AECGRectWithSize(CGRectZero, self.tableView.frame.size.width, 5.0)];
+	UIView *marginView = [[UIView alloc] initWithFrame:AEDCGRectWithSize(CGRectZero, self.tableView.frame.size.width, 5.0)];
 	marginView.backgroundColor = [UIColor clearColor];
 	self.tableView.tableHeaderView = marginView;
 	self.tableView.tableFooterView = marginView;
 	
-	self.detailView.frame = AECGRectPlaceX(self.detailView.frame, kDetailViewHiddenOrigin);
+	self.detailView.frame = AEDCGRectPlaceX(self.detailView.frame, kDetailViewHiddenOrigin);
 	self.detailView.dateFormatter = self.dateFormatter;
 	[self.detailView configure];
 
-	self.view.frame = AECGRectPlaceY(self.view.frame, self.view.frame.size.height);
+	self.view.frame = AEDCGRectPlaceY(self.view.frame, self.view.frame.size.height);
 	[self.view setDefaultRoundedCorners];
 	[UIView animateWithDuration:.3 delay:.5 options:UIViewAnimationOptionCurveEaseOut animations:^{
-		self.view.frame = AECGRectPlaceY(self.view.frame, 0.0);
+		self.view.frame = AEDCGRectPlaceY(self.view.frame, 0.0);
 	} completion:nil];
 }
 
@@ -173,7 +173,7 @@
 		return;
 	
 	[UIView animateWithDuration:0.25 delay:0.2 options:UIViewAnimationOptionCurveEaseOut animations:^{
-		self.detailView.frame = AECGRectPlaceX(self.detailView.frame, kDetailViewVisibleOrigin);
+		self.detailView.frame = AEDCGRectPlaceX(self.detailView.frame, kDetailViewVisibleOrigin);
 	} completion:^(BOOL finished) {
 		[self ae_displayTutorialIfNeeded];
 	}];

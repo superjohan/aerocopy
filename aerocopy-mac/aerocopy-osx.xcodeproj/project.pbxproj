@@ -1,0 +1,383 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9004EF97151629AC00EB0AAF /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 9004EF96151629AC00EB0AAF /* settings.png */; };
+		9018EF3914E8237E0086079E /* AeroCopyItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9018EF3714E8237E0086079E /* AeroCopyItemsViewController.m */; };
+		9018EF3A14E8237E0086079E /* AeroCopyItemsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9018EF3814E8237E0086079E /* AeroCopyItemsViewController.xib */; };
+		903803AE14E84334001F2109 /* AeroCopyItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 903803AB14E84334001F2109 /* AeroCopyItem.m */; };
+		903803AF14E84334001F2109 /* AeroCopyItemManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 903803AD14E84334001F2109 /* AeroCopyItemManager.m */; };
+		905874D114E84868003222D5 /* StatusItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 905874D014E84868003222D5 /* StatusItemView.m */; };
+		905A4CEB17527BFA0048A6FD /* AEDNSArrayAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 905A4CEA17527BFA0048A6FD /* AEDNSArrayAdditions.m */; };
+		9076410614E7B528005CDC24 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9076410514E7B528005CDC24 /* Cocoa.framework */; };
+		9076411014E7B528005CDC24 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9076410E14E7B528005CDC24 /* InfoPlist.strings */; };
+		9076411214E7B528005CDC24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9076411114E7B528005CDC24 /* main.m */; };
+		9076411614E7B528005CDC24 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 9076411414E7B528005CDC24 /* Credits.rtf */; };
+		9076411914E7B528005CDC24 /* AeroCopyAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9076411814E7B528005CDC24 /* AeroCopyAppDelegate.m */; };
+		9076411C14E7B528005CDC24 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9076411A14E7B528005CDC24 /* MainMenu.xib */; };
+		90ABCC9814F2C18E0037EBED /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 90ABCC9614F2BFE60037EBED /* RegexKitLite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		90ABCC9A14F2C2000037EBED /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 90ABCC9914F2C2000037EBED /* libicucore.dylib */; };
+		90D2D5B3150BC88600C28C71 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 90D2D5B2150BC88600C28C71 /* Icon.icns */; };
+		90D4D46C14F139E800BE8E46 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D4D46B14F139E800BE8E46 /* WebKit.framework */; };
+		90F93DB914F14EB4004710E1 /* menubaricon.png in Resources */ = {isa = PBXBuildFile; fileRef = 90F93DB814F14EB4004710E1 /* menubaricon.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9004EF96151629AC00EB0AAF /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		9018EF3614E8237E0086079E /* AeroCopyItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AeroCopyItemsViewController.h; sourceTree = "<group>"; };
+		9018EF3714E8237E0086079E /* AeroCopyItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AeroCopyItemsViewController.m; sourceTree = "<group>"; };
+		9018EF3814E8237E0086079E /* AeroCopyItemsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AeroCopyItemsViewController.xib; sourceTree = "<group>"; };
+		903803AA14E84334001F2109 /* AeroCopyItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AeroCopyItem.h; sourceTree = "<group>"; };
+		903803AB14E84334001F2109 /* AeroCopyItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AeroCopyItem.m; sourceTree = "<group>"; };
+		903803AC14E84334001F2109 /* AeroCopyItemManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AeroCopyItemManager.h; sourceTree = "<group>"; };
+		903803AD14E84334001F2109 /* AeroCopyItemManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AeroCopyItemManager.m; sourceTree = "<group>"; };
+		905874CF14E84868003222D5 /* StatusItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusItemView.h; sourceTree = "<group>"; };
+		905874D014E84868003222D5 /* StatusItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusItemView.m; sourceTree = "<group>"; };
+		905A4CE817527BFA0048A6FD /* AEDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEDLog.h; sourceTree = "<group>"; };
+		905A4CE917527BFA0048A6FD /* AEDNSArrayAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEDNSArrayAdditions.h; sourceTree = "<group>"; };
+		905A4CEA17527BFA0048A6FD /* AEDNSArrayAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEDNSArrayAdditions.m; sourceTree = "<group>"; };
+		9076410114E7B528005CDC24 /* aerocopy-osx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "aerocopy-osx.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9076410514E7B528005CDC24 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		9076410814E7B528005CDC24 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		9076410914E7B528005CDC24 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		9076410A14E7B528005CDC24 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9076410D14E7B528005CDC24 /* aerocopy-osx-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "aerocopy-osx-Info.plist"; sourceTree = "<group>"; };
+		9076410F14E7B528005CDC24 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9076411114E7B528005CDC24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9076411314E7B528005CDC24 /* aerocopy-osx-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "aerocopy-osx-Prefix.pch"; sourceTree = "<group>"; };
+		9076411514E7B528005CDC24 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		9076411714E7B528005CDC24 /* AeroCopyAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AeroCopyAppDelegate.h; sourceTree = "<group>"; };
+		9076411814E7B528005CDC24 /* AeroCopyAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AeroCopyAppDelegate.m; sourceTree = "<group>"; };
+		9076411B14E7B528005CDC24 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		90ABCC9514F2BFE60037EBED /* RegexKitLite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
+		90ABCC9614F2BFE60037EBED /* RegexKitLite.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
+		90ABCC9914F2C2000037EBED /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		90D2D5B2150BC88600C28C71 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = Icon.icns; path = ../Icon.icns; sourceTree = "<group>"; };
+		90D4D46514F137F400BE8E46 /* aerocopy-osx.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "aerocopy-osx.entitlements"; sourceTree = "<group>"; };
+		90D4D46B14F139E800BE8E46 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		90F93DB814F14EB4004710E1 /* menubaricon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menubaricon.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		907640FE14E7B528005CDC24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90ABCC9A14F2C2000037EBED /* libicucore.dylib in Frameworks */,
+				90D4D46C14F139E800BE8E46 /* WebKit.framework in Frameworks */,
+				9076410614E7B528005CDC24 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		903803A914E84334001F2109 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				905A4CE817527BFA0048A6FD /* AEDLog.h */,
+				905A4CE917527BFA0048A6FD /* AEDNSArrayAdditions.h */,
+				905A4CEA17527BFA0048A6FD /* AEDNSArrayAdditions.m */,
+				903803AA14E84334001F2109 /* AeroCopyItem.h */,
+				903803AB14E84334001F2109 /* AeroCopyItem.m */,
+				903803AC14E84334001F2109 /* AeroCopyItemManager.h */,
+				903803AD14E84334001F2109 /* AeroCopyItemManager.m */,
+			);
+			name = Shared;
+			path = ../Shared;
+			sourceTree = SOURCE_ROOT;
+		};
+		907640F614E7B528005CDC24 = {
+			isa = PBXGroup;
+			children = (
+				9076410B14E7B528005CDC24 /* aerocopy-mac */,
+				9076410414E7B528005CDC24 /* Frameworks */,
+				9076410214E7B528005CDC24 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9076410214E7B528005CDC24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9076410114E7B528005CDC24 /* aerocopy-osx.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9076410414E7B528005CDC24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				90ABCC9914F2C2000037EBED /* libicucore.dylib */,
+				90D4D46B14F139E800BE8E46 /* WebKit.framework */,
+				9076410514E7B528005CDC24 /* Cocoa.framework */,
+				9076410714E7B528005CDC24 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9076410714E7B528005CDC24 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9076410814E7B528005CDC24 /* AppKit.framework */,
+				9076410914E7B528005CDC24 /* CoreData.framework */,
+				9076410A14E7B528005CDC24 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		9076410B14E7B528005CDC24 /* aerocopy-mac */ = {
+			isa = PBXGroup;
+			children = (
+				90ABCC9B14F2C20E0037EBED /* RegexKitLite */,
+				903803A914E84334001F2109 /* Shared */,
+				9076411714E7B528005CDC24 /* AeroCopyAppDelegate.h */,
+				9076411814E7B528005CDC24 /* AeroCopyAppDelegate.m */,
+				9018EF3614E8237E0086079E /* AeroCopyItemsViewController.h */,
+				9018EF3714E8237E0086079E /* AeroCopyItemsViewController.m */,
+				905874CF14E84868003222D5 /* StatusItemView.h */,
+				905874D014E84868003222D5 /* StatusItemView.m */,
+				9076410C14E7B528005CDC24 /* Supporting Files */,
+			);
+			path = "aerocopy-mac";
+			sourceTree = "<group>";
+		};
+		9076410C14E7B528005CDC24 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9004EF96151629AC00EB0AAF /* settings.png */,
+				90D2D5B2150BC88600C28C71 /* Icon.icns */,
+				90D4D46514F137F400BE8E46 /* aerocopy-osx.entitlements */,
+				9076411A14E7B528005CDC24 /* MainMenu.xib */,
+				9018EF3814E8237E0086079E /* AeroCopyItemsViewController.xib */,
+				90F93DB814F14EB4004710E1 /* menubaricon.png */,
+				9076410D14E7B528005CDC24 /* aerocopy-osx-Info.plist */,
+				9076410E14E7B528005CDC24 /* InfoPlist.strings */,
+				9076411114E7B528005CDC24 /* main.m */,
+				9076411314E7B528005CDC24 /* aerocopy-osx-Prefix.pch */,
+				9076411414E7B528005CDC24 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		90ABCC9B14F2C20E0037EBED /* RegexKitLite */ = {
+			isa = PBXGroup;
+			children = (
+				90ABCC9514F2BFE60037EBED /* RegexKitLite.h */,
+				90ABCC9614F2BFE60037EBED /* RegexKitLite.m */,
+			);
+			name = RegexKitLite;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9076410014E7B528005CDC24 /* aerocopy-osx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9076411F14E7B528005CDC24 /* Build configuration list for PBXNativeTarget "aerocopy-osx" */;
+			buildPhases = (
+				907640FD14E7B528005CDC24 /* Sources */,
+				907640FE14E7B528005CDC24 /* Frameworks */,
+				907640FF14E7B528005CDC24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "aerocopy-osx";
+			productName = "aerocopy-mac";
+			productReference = 9076410114E7B528005CDC24 /* aerocopy-osx.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		907640F814E7B528005CDC24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AeroCopy;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Aero Deko";
+			};
+			buildConfigurationList = 907640FB14E7B528005CDC24 /* Build configuration list for PBXProject "aerocopy-osx" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 907640F614E7B528005CDC24;
+			productRefGroup = 9076410214E7B528005CDC24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9076410014E7B528005CDC24 /* aerocopy-osx */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		907640FF14E7B528005CDC24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9076411014E7B528005CDC24 /* InfoPlist.strings in Resources */,
+				9076411614E7B528005CDC24 /* Credits.rtf in Resources */,
+				9076411C14E7B528005CDC24 /* MainMenu.xib in Resources */,
+				9018EF3A14E8237E0086079E /* AeroCopyItemsViewController.xib in Resources */,
+				90F93DB914F14EB4004710E1 /* menubaricon.png in Resources */,
+				90D2D5B3150BC88600C28C71 /* Icon.icns in Resources */,
+				9004EF97151629AC00EB0AAF /* settings.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		907640FD14E7B528005CDC24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9076411214E7B528005CDC24 /* main.m in Sources */,
+				9076411914E7B528005CDC24 /* AeroCopyAppDelegate.m in Sources */,
+				9018EF3914E8237E0086079E /* AeroCopyItemsViewController.m in Sources */,
+				903803AE14E84334001F2109 /* AeroCopyItem.m in Sources */,
+				903803AF14E84334001F2109 /* AeroCopyItemManager.m in Sources */,
+				905874D114E84868003222D5 /* StatusItemView.m in Sources */,
+				90ABCC9814F2C18E0037EBED /* RegexKitLite.m in Sources */,
+				905A4CEB17527BFA0048A6FD /* AEDNSArrayAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9076410E14E7B528005CDC24 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9076410F14E7B528005CDC24 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9076411414E7B528005CDC24 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9076411514E7B528005CDC24 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		9076411A14E7B528005CDC24 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9076411B14E7B528005CDC24 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9076411D14E7B528005CDC24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9076411E14E7B528005CDC24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9076412014E7B528005CDC24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "aerocopy-mac/aerocopy-osx.entitlements";
+				CODE_SIGN_IDENTITY = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "aerocopy-mac/aerocopy-osx-Prefix.pch";
+				INFOPLIST_FILE = "aerocopy-mac/aerocopy-osx-Info.plist";
+				PRODUCT_NAME = "aerocopy-osx";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9076412114E7B528005CDC24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "aerocopy-mac/aerocopy-osx.entitlements";
+				CODE_SIGN_IDENTITY = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "aerocopy-mac/aerocopy-osx-Prefix.pch";
+				INFOPLIST_FILE = "aerocopy-mac/aerocopy-osx-Info.plist";
+				PRODUCT_NAME = "aerocopy-osx";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		907640FB14E7B528005CDC24 /* Build configuration list for PBXProject "aerocopy-osx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9076411D14E7B528005CDC24 /* Debug */,
+				9076411E14E7B528005CDC24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9076411F14E7B528005CDC24 /* Build configuration list for PBXNativeTarget "aerocopy-osx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9076412014E7B528005CDC24 /* Debug */,
+				9076412114E7B528005CDC24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 907640F814E7B528005CDC24 /* Project object */;
+}

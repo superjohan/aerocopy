@@ -1,0 +1,25 @@
+//
+//  AeroCopyItemsViewController.h
+//  aerocopy-mac
+//
+//  Created by Johan Halin on 12.2.2012.
+//  Copyright (c) 2012 Aero Deko. All rights reserved.
+//
+
+#import <Cocoa/Cocoa.h>
+#import <WebKit/WebKit.h>
+
+@class AeroCopyItemManager;
+
+@interface AeroCopyItemsViewController : NSViewController
+
+@property (nonatomic, strong) AeroCopyItemManager *itemManager;
+@property (nonatomic, strong) IBOutlet WebView *webView;
+@property (nonatomic, strong) IBOutlet NSButton *saveButton;
+@property (nonatomic, strong) IBOutlet NSPopUpButton *menuButton;
+
+- (IBAction)saveButtonClicked:(id)sender;
+- (void)popoverWillShow;
+- (void)popoverWillClose;
+
+@end

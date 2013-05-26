@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		902FA302150B953500CA9EDE /* finger@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 902FA301150B953500CA9EDE /* finger@2x.png */; };
+		902FA306150B956900CA9EDE /* TutorialView.m in Sources */ = {isa = PBXBuildFile; fileRef = 902FA305150B956900CA9EDE /* TutorialView.m */; };
+		902FA309150B9FD600CA9EDE /* AeroCopyConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 902FA308150B9FD600CA9EDE /* AeroCopyConstants.m */; };
+		9046A4D51501FBD0000113A7 /* AeroCopyDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9046A4D41501FBD0000113A7 /* AeroCopyDetailView.m */; };
+		904DC02814FFED9900A5C4DE /* AEDNSArrayAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 904DC02614FFED9900A5C4DE /* AEDNSArrayAdditions.m */; };
+		905E341F1514FB8F00749DC4 /* shadow-middle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 905E341C1514FB8F00749DC4 /* shadow-middle@2x.png */; };
+		905E34201514FB8F00749DC4 /* shadow-top@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 905E341D1514FB8F00749DC4 /* shadow-top@2x.png */; };
+		905E34211514FB8F00749DC4 /* shadow-bottom@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 905E341E1514FB8F00749DC4 /* shadow-bottom@2x.png */; };
+		905E342D1514FCFF00749DC4 /* shadow-bottom.png in Resources */ = {isa = PBXBuildFile; fileRef = 905E34261514FCFF00749DC4 /* shadow-bottom.png */; };
+		905E342E1514FCFF00749DC4 /* shadow-middle.png in Resources */ = {isa = PBXBuildFile; fileRef = 905E34271514FCFF00749DC4 /* shadow-middle.png */; };
+		905E342F1514FCFF00749DC4 /* shadow-top.png in Resources */ = {isa = PBXBuildFile; fileRef = 905E34281514FCFF00749DC4 /* shadow-top.png */; };
+		90730BFA153DDCE000E0333A /* mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 90730BF8153DDCE000E0333A /* mask.png */; };
+		90730BFB153DDCE000E0333A /* mask@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90730BF9153DDCE000E0333A /* mask@2x.png */; };
+		907640D414E7B4BB005CDC24 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907640D314E7B4BB005CDC24 /* UIKit.framework */; };
+		907640D614E7B4BB005CDC24 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907640D514E7B4BB005CDC24 /* Foundation.framework */; };
+		907640D814E7B4BB005CDC24 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907640D714E7B4BB005CDC24 /* CoreGraphics.framework */; };
+		907640DE14E7B4BB005CDC24 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 907640DC14E7B4BB005CDC24 /* InfoPlist.strings */; };
+		907640E014E7B4BB005CDC24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 907640DF14E7B4BB005CDC24 /* main.m */; };
+		907640E414E7B4BB005CDC24 /* AeroCopyAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 907640E314E7B4BB005CDC24 /* AeroCopyAppDelegate.m */; };
+		907640E714E7B4BB005CDC24 /* AeroCopyMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 907640E614E7B4BB005CDC24 /* AeroCopyMainViewController.m */; };
+		907640ED14E7B4BB005CDC24 /* AeroCopyMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 907640EB14E7B4BB005CDC24 /* AeroCopyMainViewController.xib */; };
+		90C6E702150BB69900074E53 /* finger.png in Resources */ = {isa = PBXBuildFile; fileRef = 90C6E701150BB69900074E53 /* finger.png */; };
+		90D4D47614F1486A00BE8E46 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90D4D47514F1486A00BE8E46 /* Icon@2x.png */; };
+		90D4D47914F1486F00BE8E46 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 90D4D47814F1486F00BE8E46 /* Icon.png */; };
+		90D6583B1515F52200D18614 /* AEDUIViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D6583A1515F52200D18614 /* AEDUIViewAdditions.m */; };
+		90D9F1C01514911900AC8A63 /* SavedNotificationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D9F1BF1514911900AC8A63 /* SavedNotificationView.m */; };
+		90D9F1C41514937800AC8A63 /* cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 90D9F1C21514937800AC8A63 /* cloud.png */; };
+		90D9F1C51514937800AC8A63 /* cloud@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90D9F1C31514937800AC8A63 /* cloud@2x.png */; };
+		90D9F1C815149AEF00AC8A63 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 90D9F1C615149AEF00AC8A63 /* arrow.png */; };
+		90D9F1C915149AEF00AC8A63 /* arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90D9F1C715149AEF00AC8A63 /* arrow@2x.png */; };
+		90F33FA014E80E680034647F /* AeroCopyItemManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F33F9F14E80E680034647F /* AeroCopyItemManager.m */; };
+		90F33FA414E813190034647F /* AeroCopyItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F33FA314E813190034647F /* AeroCopyItem.m */; };
+		90FBA7D0159E06F7004DF0B8 /* Bariol_Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 90FBA7CC159E06F7004DF0B8 /* Bariol_Bold.otf */; };
+		90FBA7D2159E06F7004DF0B8 /* Bariol_Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 90FBA7CE159E06F7004DF0B8 /* Bariol_Regular.otf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		902FA301150B953500CA9EDE /* finger@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "finger@2x.png"; sourceTree = "<group>"; };
+		902FA304150B956900CA9EDE /* TutorialView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialView.h; sourceTree = "<group>"; };
+		902FA305150B956900CA9EDE /* TutorialView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialView.m; sourceTree = "<group>"; };
+		902FA307150B9FD600CA9EDE /* AeroCopyConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AeroCopyConstants.h; sourceTree = "<group>"; };
+		902FA308150B9FD600CA9EDE /* AeroCopyConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AeroCopyConstants.m; sourceTree = "<group>"; };
+		9046A4D31501FBD0000113A7 /* AeroCopyDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AeroCopyDetailView.h; sourceTree = "<group>"; };
+		9046A4D41501FBD0000113A7 /* AeroCopyDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AeroCopyDetailView.m; sourceTree = "<group>"; };
+		9046A4DB1501FF4F000113A7 /* AEDCGHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEDCGHelpers.h; sourceTree = "<group>"; };
+		904DC02314FFED9900A5C4DE /* AEDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEDLog.h; sourceTree = "<group>"; };
+		904DC02514FFED9900A5C4DE /* AEDNSArrayAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEDNSArrayAdditions.h; sourceTree = "<group>"; };
+		904DC02614FFED9900A5C4DE /* AEDNSArrayAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEDNSArrayAdditions.m; sourceTree = "<group>"; };
+		905E341C1514FB8F00749DC4 /* shadow-middle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shadow-middle@2x.png"; sourceTree = "<group>"; };
+		905E341D1514FB8F00749DC4 /* shadow-top@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shadow-top@2x.png"; sourceTree = "<group>"; };
+		905E341E1514FB8F00749DC4 /* shadow-bottom@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shadow-bottom@2x.png"; sourceTree = "<group>"; };
+		905E34261514FCFF00749DC4 /* shadow-bottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shadow-bottom.png"; sourceTree = "<group>"; };
+		905E34271514FCFF00749DC4 /* shadow-middle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shadow-middle.png"; sourceTree = "<group>"; };
+		905E34281514FCFF00749DC4 /* shadow-top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shadow-top.png"; sourceTree = "<group>"; };
+		90730BF8153DDCE000E0333A /* mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mask.png; sourceTree = "<group>"; };
+		90730BF9153DDCE000E0333A /* mask@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mask@2x.png"; sourceTree = "<group>"; };
+		907640CF14E7B4BB005CDC24 /* aerocopy-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "aerocopy-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		907640D314E7B4BB005CDC24 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		907640D514E7B4BB005CDC24 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		907640D714E7B4BB005CDC24 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		907640DB14E7B4BB005CDC24 /* aerocopy-ios-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "aerocopy-ios-Info.plist"; sourceTree = "<group>"; };
+		907640DD14E7B4BB005CDC24 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		907640DF14E7B4BB005CDC24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		907640E114E7B4BB005CDC24 /* aerocopy-ios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "aerocopy-ios-Prefix.pch"; sourceTree = "<group>"; };
+		907640E214E7B4BB005CDC24 /* AeroCopyAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AeroCopyAppDelegate.h; sourceTree = "<group>"; };
+		907640E314E7B4BB005CDC24 /* AeroCopyAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AeroCopyAppDelegate.m; sourceTree = "<group>"; };
+		907640E514E7B4BB005CDC24 /* AeroCopyMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AeroCopyMainViewController.h; sourceTree = "<group>"; };
+		907640E614E7B4BB005CDC24 /* AeroCopyMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AeroCopyMainViewController.m; sourceTree = "<group>"; };
+		907640EC14E7B4BB005CDC24 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AeroCopyMainViewController.xib; sourceTree = "<group>"; };
+		90C6E701150BB69900074E53 /* finger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = finger.png; sourceTree = "<group>"; };
+		90D4D47514F1486A00BE8E46 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
+		90D4D47814F1486F00BE8E46 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
+		90D658391515F52200D18614 /* AEDUIViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEDUIViewAdditions.h; sourceTree = "<group>"; };
+		90D6583A1515F52200D18614 /* AEDUIViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEDUIViewAdditions.m; sourceTree = "<group>"; };
+		90D9F1BE1514911900AC8A63 /* SavedNotificationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SavedNotificationView.h; sourceTree = "<group>"; };
+		90D9F1BF1514911900AC8A63 /* SavedNotificationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SavedNotificationView.m; sourceTree = "<group>"; };
+		90D9F1C21514937800AC8A63 /* cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloud.png; sourceTree = "<group>"; };
+		90D9F1C31514937800AC8A63 /* cloud@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloud@2x.png"; sourceTree = "<group>"; };
+		90D9F1C615149AEF00AC8A63 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
+		90D9F1C715149AEF00AC8A63 /* arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow@2x.png"; sourceTree = "<group>"; };
+		90DBC1BA14E7DA1100A89D35 /* aerocopy-ios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "aerocopy-ios.entitlements"; sourceTree = "<group>"; };
+		90F33F9E14E80E680034647F /* AeroCopyItemManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AeroCopyItemManager.h; sourceTree = "<group>"; };
+		90F33F9F14E80E680034647F /* AeroCopyItemManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AeroCopyItemManager.m; sourceTree = "<group>"; };
+		90F33FA214E813190034647F /* AeroCopyItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AeroCopyItem.h; sourceTree = "<group>"; };
+		90F33FA314E813190034647F /* AeroCopyItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AeroCopyItem.m; sourceTree = "<group>"; };
+		90FBA7CC159E06F7004DF0B8 /* Bariol_Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bariol_Bold.otf; sourceTree = "<group>"; };
+		90FBA7CE159E06F7004DF0B8 /* Bariol_Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bariol_Regular.otf; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		907640CC14E7B4BB005CDC24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				907640D414E7B4BB005CDC24 /* UIKit.framework in Frameworks */,
+				907640D614E7B4BB005CDC24 /* Foundation.framework in Frameworks */,
+				907640D814E7B4BB005CDC24 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		903803A214E84221001F2109 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				9046A4DB1501FF4F000113A7 /* AEDCGHelpers.h */,
+				904DC02314FFED9900A5C4DE /* AEDLog.h */,
+				904DC02514FFED9900A5C4DE /* AEDNSArrayAdditions.h */,
+				904DC02614FFED9900A5C4DE /* AEDNSArrayAdditions.m */,
+				90D658391515F52200D18614 /* AEDUIViewAdditions.h */,
+				90D6583A1515F52200D18614 /* AEDUIViewAdditions.m */,
+				90F33FA214E813190034647F /* AeroCopyItem.h */,
+				90F33FA314E813190034647F /* AeroCopyItem.m */,
+				90F33F9E14E80E680034647F /* AeroCopyItemManager.h */,
+				90F33F9F14E80E680034647F /* AeroCopyItemManager.m */,
+			);
+			name = Shared;
+			path = ../Shared;
+			sourceTree = SOURCE_ROOT;
+		};
+		903803A414E8423F001F2109 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				907640E514E7B4BB005CDC24 /* AeroCopyMainViewController.h */,
+				907640E614E7B4BB005CDC24 /* AeroCopyMainViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		9046A4DC1501FFFE000113A7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9046A4D31501FBD0000113A7 /* AeroCopyDetailView.h */,
+				9046A4D41501FBD0000113A7 /* AeroCopyDetailView.m */,
+				902FA304150B956900CA9EDE /* TutorialView.h */,
+				902FA305150B956900CA9EDE /* TutorialView.m */,
+				90D9F1BE1514911900AC8A63 /* SavedNotificationView.h */,
+				90D9F1BF1514911900AC8A63 /* SavedNotificationView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		905E34301514FDA000749DC4 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				90730BF8153DDCE000E0333A /* mask.png */,
+				90730BF9153DDCE000E0333A /* mask@2x.png */,
+				90D9F1C615149AEF00AC8A63 /* arrow.png */,
+				90D9F1C715149AEF00AC8A63 /* arrow@2x.png */,
+				90D9F1C21514937800AC8A63 /* cloud.png */,
+				90D9F1C31514937800AC8A63 /* cloud@2x.png */,
+				90C6E701150BB69900074E53 /* finger.png */,
+				902FA301150B953500CA9EDE /* finger@2x.png */,
+				90D4D47814F1486F00BE8E46 /* Icon.png */,
+				90D4D47514F1486A00BE8E46 /* Icon@2x.png */,
+				905E34261514FCFF00749DC4 /* shadow-bottom.png */,
+				905E341E1514FB8F00749DC4 /* shadow-bottom@2x.png */,
+				905E34271514FCFF00749DC4 /* shadow-middle.png */,
+				905E341C1514FB8F00749DC4 /* shadow-middle@2x.png */,
+				905E34281514FCFF00749DC4 /* shadow-top.png */,
+				905E341D1514FB8F00749DC4 /* shadow-top@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		907640C414E7B4BB005CDC24 = {
+			isa = PBXGroup;
+			children = (
+				907640D914E7B4BB005CDC24 /* aerocopy-ios */,
+				907640D214E7B4BB005CDC24 /* Frameworks */,
+				907640D014E7B4BB005CDC24 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		907640D014E7B4BB005CDC24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				907640CF14E7B4BB005CDC24 /* aerocopy-ios.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		907640D214E7B4BB005CDC24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				907640D314E7B4BB005CDC24 /* UIKit.framework */,
+				907640D514E7B4BB005CDC24 /* Foundation.framework */,
+				907640D714E7B4BB005CDC24 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		907640D914E7B4BB005CDC24 /* aerocopy-ios */ = {
+			isa = PBXGroup;
+			children = (
+				903803A214E84221001F2109 /* Shared */,
+				9046A4DC1501FFFE000113A7 /* Views */,
+				903803A414E8423F001F2109 /* View Controllers */,
+				907640E214E7B4BB005CDC24 /* AeroCopyAppDelegate.h */,
+				907640E314E7B4BB005CDC24 /* AeroCopyAppDelegate.m */,
+				902FA307150B9FD600CA9EDE /* AeroCopyConstants.h */,
+				902FA308150B9FD600CA9EDE /* AeroCopyConstants.m */,
+				907640DA14E7B4BB005CDC24 /* Supporting Files */,
+			);
+			path = "aerocopy-ios";
+			sourceTree = "<group>";
+		};
+		907640DA14E7B4BB005CDC24 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				90FBA7CC159E06F7004DF0B8 /* Bariol_Bold.otf */,
+				90FBA7CE159E06F7004DF0B8 /* Bariol_Regular.otf */,
+				905E34301514FDA000749DC4 /* Images */,
+				907640EB14E7B4BB005CDC24 /* AeroCopyMainViewController.xib */,
+				90DBC1BA14E7DA1100A89D35 /* aerocopy-ios.entitlements */,
+				907640DB14E7B4BB005CDC24 /* aerocopy-ios-Info.plist */,
+				907640DC14E7B4BB005CDC24 /* InfoPlist.strings */,
+				907640DF14E7B4BB005CDC24 /* main.m */,
+				907640E114E7B4BB005CDC24 /* aerocopy-ios-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		907640CE14E7B4BB005CDC24 /* aerocopy-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 907640F314E7B4BB005CDC24 /* Build configuration list for PBXNativeTarget "aerocopy-ios" */;
+			buildPhases = (
+				907640CB14E7B4BB005CDC24 /* Sources */,
+				907640CC14E7B4BB005CDC24 /* Frameworks */,
+				907640CD14E7B4BB005CDC24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "aerocopy-ios";
+			productName = "aerocopy-ios";
+			productReference = 907640CF14E7B4BB005CDC24 /* aerocopy-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		907640C614E7B4BB005CDC24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AeroCopy;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Aero Deko";
+			};
+			buildConfigurationList = 907640C914E7B4BB005CDC24 /* Build configuration list for PBXProject "aerocopy-ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 907640C414E7B4BB005CDC24;
+			productRefGroup = 907640D014E7B4BB005CDC24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				907640CE14E7B4BB005CDC24 /* aerocopy-ios */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		907640CD14E7B4BB005CDC24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				907640DE14E7B4BB005CDC24 /* InfoPlist.strings in Resources */,
+				907640ED14E7B4BB005CDC24 /* AeroCopyMainViewController.xib in Resources */,
+				90D4D47614F1486A00BE8E46 /* Icon@2x.png in Resources */,
+				90D4D47914F1486F00BE8E46 /* Icon.png in Resources */,
+				902FA302150B953500CA9EDE /* finger@2x.png in Resources */,
+				90C6E702150BB69900074E53 /* finger.png in Resources */,
+				90D9F1C41514937800AC8A63 /* cloud.png in Resources */,
+				90D9F1C51514937800AC8A63 /* cloud@2x.png in Resources */,
+				90D9F1C815149AEF00AC8A63 /* arrow.png in Resources */,
+				90D9F1C915149AEF00AC8A63 /* arrow@2x.png in Resources */,
+				905E341F1514FB8F00749DC4 /* shadow-middle@2x.png in Resources */,
+				905E34201514FB8F00749DC4 /* shadow-top@2x.png in Resources */,
+				905E34211514FB8F00749DC4 /* shadow-bottom@2x.png in Resources */,
+				905E342D1514FCFF00749DC4 /* shadow-bottom.png in Resources */,
+				905E342E1514FCFF00749DC4 /* shadow-middle.png in Resources */,
+				905E342F1514FCFF00749DC4 /* shadow-top.png in Resources */,
+				90730BFA153DDCE000E0333A /* mask.png in Resources */,
+				90730BFB153DDCE000E0333A /* mask@2x.png in Resources */,
+				90FBA7D0159E06F7004DF0B8 /* Bariol_Bold.otf in Resources */,
+				90FBA7D2159E06F7004DF0B8 /* Bariol_Regular.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		907640CB14E7B4BB005CDC24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				907640E014E7B4BB005CDC24 /* main.m in Sources */,
+				907640E414E7B4BB005CDC24 /* AeroCopyAppDelegate.m in Sources */,
+				907640E714E7B4BB005CDC24 /* AeroCopyMainViewController.m in Sources */,
+				90F33FA014E80E680034647F /* AeroCopyItemManager.m in Sources */,
+				90F33FA414E813190034647F /* AeroCopyItem.m in Sources */,
+				904DC02814FFED9900A5C4DE /* AEDNSArrayAdditions.m in Sources */,
+				9046A4D51501FBD0000113A7 /* AeroCopyDetailView.m in Sources */,
+				902FA306150B956900CA9EDE /* TutorialView.m in Sources */,
+				902FA309150B9FD600CA9EDE /* AeroCopyConstants.m in Sources */,
+				90D9F1C01514911900AC8A63 /* SavedNotificationView.m in Sources */,
+				90D6583B1515F52200D18614 /* AEDUIViewAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		907640DC14E7B4BB005CDC24 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				907640DD14E7B4BB005CDC24 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		907640EB14E7B4BB005CDC24 /* AeroCopyMainViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				907640EC14E7B4BB005CDC24 /* en */,
+			);
+			name = AeroCopyMainViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		907640F114E7B4BB005CDC24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		907640F214E7B4BB005CDC24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		907640F414E7B4BB005CDC24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "aerocopy-ios/aerocopy-ios.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "aerocopy-ios/aerocopy-ios-Prefix.pch";
+				INFOPLIST_FILE = "aerocopy-ios/aerocopy-ios-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		907640F514E7B4BB005CDC24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "aerocopy-ios/aerocopy-ios.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "aerocopy-ios/aerocopy-ios-Prefix.pch";
+				INFOPLIST_FILE = "aerocopy-ios/aerocopy-ios-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		907640C914E7B4BB005CDC24 /* Build configuration list for PBXProject "aerocopy-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				907640F114E7B4BB005CDC24 /* Debug */,
+				907640F214E7B4BB005CDC24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		907640F314E7B4BB005CDC24 /* Build configuration list for PBXNativeTarget "aerocopy-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				907640F414E7B4BB005CDC24 /* Debug */,
+				907640F514E7B4BB005CDC24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 907640C614E7B4BB005CDC24 /* Project object */;
+}

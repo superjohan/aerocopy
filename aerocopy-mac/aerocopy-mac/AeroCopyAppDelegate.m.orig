@@ -1,0 +1,90 @@
+//
+//  AeroCopyAppDelegate.m
+//  aerocopy-mac
+//
+//  Created by Johan Halin on 12.2.2012.
+//  Copyright (c) 2012 Aero Deko. All rights reserved.
+//
+
+#import "AeroCopyAppDelegate.h"
+#import "AeroCopyItemsViewController.h"
+#import "AeroCopyItemManager.h"
+#import "StatusItemView.h"
+
+@interface AeroCopyAppDelegate ()
+@property (nonatomic, strong) NSStatusItem *statusItem;
+@property (nonatomic, strong) AeroCopyItemManager *itemManager;
+@property (nonatomic, strong) NSPopover *popover;
+@property (nonatomic, strong) AeroCopyItemsViewController *itemsViewController;
+@end
+
+@implementation AeroCopyAppDelegate
+
+@synthesize statusItem = _statusItem;
+@synthesize itemManager = _itemManager;
+@synthesize popover = _popover;
+@synthesize itemsViewController = _itemsViewController;
+
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
+{
+	NSImage *itemImage = [NSImage imageNamed:@"menubaricon.png"];
+	itemImage.size = NSMakeSize(itemImage.size.width, itemImage.size.height);
+	StatusItemView *view = [[StatusItemView alloc] initWithFrame:NSMakeRect(0, 0, itemImage.size.width, itemImage.size.height)];
+	view.owner = self;
+	view.image = itemImage;
+	
+	self.statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
+	self.statusItem.highlightMode = YES;
+	[self.statusItem setView:view];
+
+	self.itemManager = [[AeroCopyItemManager alloc] init];
+	[self.itemManager loadItems];
+}
+
+- (void)itemClicked:(id)sender
+{
+	if ( ! [sender isKindOfClass:[StatusItemView class]])
+		return;
+	
+	if (self.itemsViewController != nil)
+	{
+		[self.popover close];
+		return;
+	}
+	
+	StatusItemView *view = (StatusItemView *)sender;
+	
+	self.popover = [[NSPopover alloc] init];
+	self.popover.behavior = NSPopoverBehaviorTransient;
+	self.popover.appearance = NSPopoverAppearanceHUD;
+	self.itemsViewController = [[AeroCopyItemsViewController alloc] initWithNibName:@"AeroCopyItemsViewController" bundle:nil];
+	self.itemsViewController.itemManager = self.itemManager;
+	self.popover.contentViewController = self.itemsViewController;
+	self.popover.delegate = self;
+	[self.popover showRelativeToRect:view.frame ofView:view preferredEdge:NSMinYEdge];
+}
+
+#pragma mark - NSPopoverDelegate
+
+- (void)popoverDidShow:(NSNotification *)notification
+{
+	AELOG_DEBUG(@"");
+	
+	[self.itemsViewController popoverShown];
+}
+
+- (void)popoverDidClose:(NSNotification *)notification
+{
+	AELOG_DEBUG(@"");
+	
+	self.itemsViewController = nil;
+}
+
+- (void)popoverWillClose:(NSNotification *)notification
+{
+	AELOG_DEBUG(@"");
+	
+	[self.itemsViewController popoverWillClose];
+}
+
+@end

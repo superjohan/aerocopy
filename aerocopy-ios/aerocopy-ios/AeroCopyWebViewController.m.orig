@@ -1,0 +1,93 @@
+//
+//  AeroCopyWebViewController.m
+//  aerocopy-ios
+//
+//  Created by Johan Halin on 12.2.2012.
+//  Copyright (c) 2012 Aero Deko. All rights reserved.
+//
+
+#import "AeroCopyWebViewController.h"
+#import "AeroCopyItem.h"
+
+@interface AeroCopyWebViewController ()
+@property (nonatomic, strong) NSDateFormatter *dateFormatter;
+@end
+
+@implementation AeroCopyWebViewController
+
+@synthesize webView = _webView;
+@synthesize item = _item;
+@synthesize dateFormatter = _dateFormatter;
+
+#pragma mark - Private
+
+- (void)ae_loadItem
+{
+	NSString *htmlString = [NSString stringWithFormat:@"<html><style type=\"text/css\"> #text { color: black; font-size: 21px; } #date { #222: black; font-size: 14px; font-family: HelveticaNeue; } body { font-family: HelveticaNeue-Light; } a { color: #21a4cb; text-decoration: none; } #container { height: 480px; display: table; width: 280px; margin: 0 auto; } #content { display: table-cell; vertical-align: middle; padding-bottom: 20px; }</style><body><div id=\"container\"><div id=\"content\"><p id=\"text\">%@</p><p id=\"date\">saved %@</p></div></div></body></html>", self.item.text, [self.dateFormatter stringFromDate:self.item.date]];
+	[self.webView loadHTMLString:htmlString baseURL:nil];
+}
+
+- (void)ae_backSwipeAction:(UISwipeGestureRecognizer *)recognizer
+{
+	[self.navigationController popViewControllerAnimated:YES];
+}
+
+#pragma mark - Public
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    // Do any additional setup after loading the view from its nib.s
+	
+	self.title = NSLocalizedString(@"Item", nil);
+	
+	self.dateFormatter = [[NSDateFormatter alloc] init];
+	self.dateFormatter.dateStyle = NSDateFormatterFullStyle;
+	self.dateFormatter.timeStyle = NSDateFormatterShortStyle;
+	
+	UISwipeGestureRecognizer *gestureRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(ae_backSwipeAction:)];
+	[self.view addGestureRecognizer:gestureRecognizer];
+	
+	self.webView.scrollView.scrollEnabled = NO;
+	
+	if (self.item != nil)
+		[self ae_loadItem];
+}
+
+
+- (void)viewDidUnload
+{
+    [super viewDidUnload];
+    // Release any retained subviews of the main view.
+    // e.g. self.myOutlet = nil;
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+#pragma mark - UIWebViewDelegate
+
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
+{
+	if ([request.URL.scheme isEqualToString:@"about"])
+		return YES;
+	else
+	{
+		[[UIApplication sharedApplication] openURL:request.URL];
+		
+		return NO;
+	}
+}
+
+@end
